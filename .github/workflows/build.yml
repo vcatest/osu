@@ -26,7 +26,9 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.100
+        dotnet-version: |
+          8.0.100
+          9.0.x
 
     ## FIXED: Install the SonarScanner and add it to GITHUB_PATH
     - name: Install SonarScanner
